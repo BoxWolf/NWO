@@ -78,7 +78,7 @@ async function getRevertReason(txHash) {
 }
 
 const getContract = async (web3) => {
-  const data = await getJSON("./contracts/MyNFTCollection.json")
+  const data = await getJSON("https://raw.githubusercontent.com/BoxWolf/NWO/main/MyNFTCollection.json")
 
   const netId = await web3.eth.net.getId()
   const deployedNetwork = data.networks[netId]
